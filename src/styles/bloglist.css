@@ -1,0 +1,43 @@
+/* blog previews / list */
+.blog-preview {
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-bottom: 1px solid whitesmoke;
+    
+  }
+  /* .blog-preview:hover {
+    box-shadow: 1px 3px 5px darkgrey;
+  } */
+  .blog-preview h2 {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 8px;
+  }
+  .blog-preview img{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .blog-preview .title-nav {
+    display: flex;
+    max-width: 600px;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+  }
+  .blog-preview .title-nav button{
+    margin-left: auto;
+    border:none;
+    background-color: whitesmoke;
+  }
+  .blog-preview .title-nav button:hover{
+    box-shadow: 1px 3px 5px darkgrey;
+    background-color:#f1356d;
+    color:white;
+    cursor: pointer;
+  }
+  
+  .blog-preview .caption {
+    padding:20px;
+  }
+  .blog-preview a {
+  text-decoration: none;
+  }
