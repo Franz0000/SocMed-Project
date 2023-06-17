@@ -34,7 +34,7 @@ const useFetch = (url) => {
     return () => abortCont.abort();
   }, [url])
 
-  return { data ,setData, isPending, error };
+  return { data, isPending, error };
 }
  
 export default useFetch;
