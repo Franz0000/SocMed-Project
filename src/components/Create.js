@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {useHistory} from 'react-router-dom';
+import '../styles/create.css';
 const Create = () => {
     const [title, setTitle] = useState('')
     const [caption, setCaption] = useState('')

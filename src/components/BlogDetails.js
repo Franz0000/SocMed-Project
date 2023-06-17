@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
 import useFetch from '../customHooks/useFetch'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import '../styles/blogdetails.css';
 const BlogDetails = () => {
  const {id} = useParams()
- const  {data:blog, isPending , error} = useFetch("http://localhost:8000/blogs/" + id)
+ const  {data:blog, isPending } = useFetch("http://localhost:8000/blogs/" + id)
  const history = useHistory()
  const handleDelete = () => {
     fetch("http://localhost:8000/blogs/" + blog.id,{
@@ -15,7 +16,6 @@ const BlogDetails = () => {
  }
     return ( 
         <div className="blogDetails">
-            {error &&<div>{error}</div> }
             {isPending && <div>Fetching Data...</div>}
            {blog && <div>
                 <div className="nav">

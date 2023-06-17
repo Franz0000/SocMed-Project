@@ -1,0 +1,21 @@
+.blogDetails{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .blogDetails img{
+    max-width: 600px;
+  }
+  .blogDetails .nav{
+    display:flex;
+    align-items: center;
+  }
+  .blogDetails .nav button{
+    margin-left: auto;
+    margin-right:20px;
+    border:none
+  }
+  .blogDetails .nav button:hover{
+    box-shadow: 1px 3px 5px gray;
+    cursor: pointer;
+  }
+  
